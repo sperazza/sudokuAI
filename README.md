@@ -3,11 +3,21 @@
 
 # Question 1 (Naked Twins)
 Q: How do we use constraint propagation to solve the naked twins problem?  
-A: *Student should provide answer here*
+A: Constraint propagation uses a method of checking a rule(constraint), which forces a solution in 
+    all dependent boxes.  The constraint says that if there is a single pair of numbers in one unit,
+    then it forces the removal of those numbers from other boxes in the same unit. To implement this, 
+    it is necessary to find all 2 digit boxes, and see if 2 exist in the same unit.  if this constraint
+    is found to be true, you check all other boxes in the unit and remove the single digits, found in 
+    the naked-twins, from those numbers.  This can be repeated on multiple reduced versions of the
+    puzzle, as further reductions are applied.
 
 # Question 2 (Diagonal Sudoku)
 Q: How do we use constraint propagation to solve the diagonal sudoku problem?  
-A: *Student should provide answer here*
+A: The solution to a diagonal Sudoku puzzle is similar to a regular Sudoku puzzle, with the additional
+    constraint of 2 diagonal units, an identity type matrix (diagonals), and column swapped 
+    type matrix(opposite diagonals).  When solving a diagonal puzzle, the methods used in a normal Sudoku
+    are then applied with this additional set of constraints.  These constraints include Eliminate, 
+    Only-Choice, Naked-Twins, and Depth First Search. 
 
 ### Install
 
