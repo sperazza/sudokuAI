@@ -17,7 +17,7 @@ A: The solution to a diagonal Sudoku puzzle is similar to a regular Sudoku puzzl
     constraint of 2 diagonal units, an identity type matrix (diagonals), and column swapped 
     type matrix(opposite diagonals).  When solving a diagonal puzzle, the methods used in a normal Sudoku
     are then applied with this additional set of constraints.  These constraints include Eliminate, 
-    Only-Choice, Naked-Twins, and Depth First Search. 
+    Only-Choice, Naked-Twins, and a search strategy of Depth First Search. 
 
 ### Install
 
